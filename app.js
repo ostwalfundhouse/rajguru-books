@@ -444,7 +444,17 @@
   let searchQuery = '';
   let selectedPageRange = 'all';
   let currentSort = 'default';
-  let visibleCount = 24;
+
+  const getBatchSize = () => {
+    if (window.innerWidth <= 600) return 6;
+    if (window.innerWidth <= 900) return 12;
+    return 24;
+  };
+  const getStepSize = () => {
+    if (window.innerWidth <= 600) return 6;
+    return 12;
+  };
+  let visibleCount = getBatchSize();
 
 
 
@@ -490,7 +500,7 @@
 
   function renderCatalog(resetCount = false) {
     if (!productsGrid) return;
-    if (resetCount) visibleCount = 24;
+    if (resetCount) visibleCount = getBatchSize();
 
     const filtered = filterAndSortProducts();
     const toShow = filtered.slice(0, visibleCount);
@@ -633,9 +643,19 @@
       `;
     }).join('');
 
-    // Toggle Load More button
+    // Toggle Load More button & Next Section link
     if (catalogPagination) {
-      catalogPagination.style.display = visibleCount >= filtered.length ? 'none' : 'flex';
+      catalogPagination.style.display = 'flex';
+      if (loadMoreBtn) {
+        const remaining = filtered.length - toShow.length;
+        if (remaining > 0) {
+          const nextBatch = Math.min(remaining, getStepSize());
+          loadMoreBtn.style.display = 'inline-block';
+          loadMoreBtn.innerHTML = `Load More Products (+${nextBatch}) <span style="opacity:0.65;font-size:0.85em;margin-left:4px;">(${toShow.length}/${filtered.length})</span>`;
+        } else {
+          loadMoreBtn.style.display = 'none';
+        }
+      }
     }
 
     // Attach card inquire click listeners to pre-populate contact form
@@ -703,7 +723,7 @@
   });
 
   loadMoreBtn?.addEventListener('click', () => {
-    visibleCount += 24;
+    visibleCount += getStepSize();
     renderCatalog(false);
   });
 

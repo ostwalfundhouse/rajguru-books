@@ -64,6 +64,30 @@
   document.getElementById('heroNext')?.addEventListener('click', () => showSlide(activeSlide + 1, true));
   dots.forEach(dot => dot.addEventListener('click', () => showSlide(Number(dot.dataset.go), true)));
 
+  // Touch Swipe on Hero to change slides naturally on mobile
+  const heroSection = document.getElementById('top');
+  let heroTouchX = 0;
+  let heroTouchY = 0;
+  heroSection?.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches.length === 1) {
+      heroTouchX = e.touches[0].clientX;
+      heroTouchY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+  heroSection?.addEventListener('touchend', (e) => {
+    if (e.changedTouches && e.changedTouches.length === 1) {
+      const diffX = e.changedTouches[0].clientX - heroTouchX;
+      const diffY = e.changedTouches[0].clientY - heroTouchY;
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          showSlide(activeSlide + 1, true); // swipe left
+        } else {
+          showSlide(activeSlide - 1, true); // swipe right
+        }
+      }
+    }
+  }, { passive: true });
+
   if (!reduceMotion && progressEl) {
     const heroTick = (now) => {
       const paused = now < pauseUntil;
@@ -262,6 +286,55 @@
   const openVideoModalBtn = document.getElementById('openVideoModalBtn');
   const driveEmbedUrl = 'https://drive.google.com/file/d/1DOlOTDlwVoY3LvEV1JHB4-PfBNDW6wzi/preview';
 
+  const videoSoundToggleBtn = document.getElementById('videoSoundToggleBtn');
+  const soundBadgeIcon = document.getElementById('soundBadgeIcon');
+  const soundBadgeText = document.getElementById('soundBadgeText');
+  let soundBadgeHideTimer = null;
+
+  const updateSoundBadgeUI = () => {
+    if (!modalVideoPlayer || !videoSoundToggleBtn) return;
+    clearTimeout(soundBadgeHideTimer);
+    if (modalVideoPlayer.muted || modalVideoPlayer.volume === 0) {
+      videoSoundToggleBtn.classList.remove('is-unmuted');
+      if (soundBadgeIcon) soundBadgeIcon.textContent = '🔇';
+      if (soundBadgeText) soundBadgeText.textContent = 'Sound is Off · Tap to Unmute';
+      videoSoundToggleBtn.style.display = 'inline-flex';
+      videoSoundToggleBtn.style.opacity = '1';
+    } else {
+      videoSoundToggleBtn.classList.add('is-unmuted');
+      if (soundBadgeIcon) soundBadgeIcon.textContent = '🔊';
+      if (soundBadgeText) soundBadgeText.textContent = 'Sound ON';
+      videoSoundToggleBtn.style.display = 'inline-flex';
+      videoSoundToggleBtn.style.opacity = '1';
+      soundBadgeHideTimer = setTimeout(() => {
+        if (!modalVideoPlayer.muted && videoSoundToggleBtn) {
+          videoSoundToggleBtn.style.opacity = '0';
+          setTimeout(() => {
+            if (!modalVideoPlayer.muted && videoSoundToggleBtn) videoSoundToggleBtn.style.display = 'none';
+          }, 350);
+        }
+      }, 2500);
+    }
+  };
+
+  const toggleSound = (e) => {
+    if (e) e.stopPropagation();
+    if (!modalVideoPlayer) return;
+    modalVideoPlayer.muted = !modalVideoPlayer.muted;
+    if (!modalVideoPlayer.muted) modalVideoPlayer.volume = 1.0;
+    updateSoundBadgeUI();
+  };
+
+  videoSoundToggleBtn?.addEventListener('click', toggleSound);
+  modalVideoPlayer?.addEventListener('volumechange', updateSoundBadgeUI);
+  modalVideoPlayer?.addEventListener('click', () => {
+    if (modalVideoPlayer.muted) {
+      modalVideoPlayer.muted = false;
+      modalVideoPlayer.volume = 1.0;
+      updateSoundBadgeUI();
+    }
+  });
+
   const openVideo = () => {
     if (videoModal) {
       videoModal.classList.add('is-open');
@@ -274,9 +347,12 @@
       modalVideoPlayer.currentTime = 0;
       modalVideoPlayer.muted = false;
       modalVideoPlayer.volume = 1.0;
+      updateSoundBadgeUI();
+
       modalVideoPlayer.play().catch(err => {
-        console.warn('Unmuted autoplay prevented by browser policy; starting muted with unmute enabled:', err);
+        console.warn('Unmuted autoplay prevented by browser policy; starting muted with unmute badge ready:', err);
         modalVideoPlayer.muted = true;
+        updateSoundBadgeUI();
         modalVideoPlayer.play().catch(() => {});
       });
     } else if (modalVideoFrame) {

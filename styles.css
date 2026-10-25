@@ -36,8 +36,9 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+  touch-action: pan-y;
 }
 body {
   background: var(--black);
@@ -46,10 +47,23 @@ body {
   font-size: 16px;
   line-height: 1.55;
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 100vw;
+  overflow-x: hidden !important;
   position: relative;
+  touch-action: pan-y;
   -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+/* Allow horizontal touch gestures only on specific scrollable components */
+.category-pills, .chain-track, .modal-video-container {
+  touch-action: pan-x pan-y;
 }
 
 h1, h2, h3, h4, h5, h6, p, blockquote, cite {
@@ -2733,14 +2747,54 @@ em {
 }
 
 .modal-video-container {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
+  overflow: hidden;
 }
 .modal-video-container iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.video-sound-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 25;
+  background: rgba(217, 37, 44, 0.95);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+  transition: opacity .3s ease, transform .2s ease, background .25s;
+  pointer-events: auto;
+  animation: pulseBadge 2.4s infinite;
+}
+.video-sound-badge:hover {
+  transform: scale(1.05);
+  background: var(--red);
+}
+.video-sound-badge.is-unmuted {
+  background: rgba(16, 185, 129, 0.92);
+  border-color: rgba(255, 255, 255, 0.4);
+  animation: none;
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(1); box-shadow: 0 4px 16px rgba(217, 37, 44, 0.4); }
+  50% { transform: scale(1.04); box-shadow: 0 6px 24px rgba(217, 37, 44, 0.7); }
+  100% { transform: scale(1); box-shadow: 0 4px 16px rgba(217, 37, 44, 0.4); }
 }
 
 .modal-caption {
@@ -2873,6 +2927,7 @@ em {
   .nav-enquire { display: none; }
   .hero-footer { grid-template-columns: 1fr auto; }
   .hero-place { display: none; }
+  .scroll-cue { display: none !important; }
   
   /* Horizontal Chain Mobile Adaptation */
   .value-chain {

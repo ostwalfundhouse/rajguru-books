@@ -36,8 +36,8 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden !important;
+  max-width: 100%;
+  overflow-x: clip;
   touch-action: pan-y;
 }
 body {
@@ -47,8 +47,8 @@ body {
   font-size: 16px;
   line-height: 1.55;
   width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden !important;
+  max-width: 100%;
+  overflow-x: clip;
   position: relative;
   touch-action: pan-y;
   -webkit-font-smoothing: antialiased;
@@ -56,8 +56,8 @@ body {
 
 main {
   width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden !important;
+  max-width: 100%;
+  overflow-x: clip;
   position: relative;
 }
 
@@ -947,8 +947,8 @@ em {
   height: 500vh;
   background: #080c10;
   width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .chain-sticky {

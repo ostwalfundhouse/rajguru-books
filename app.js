@@ -802,7 +802,7 @@
     const target = document.querySelector(window.location.hash);
     if (target) {
       setTimeout(() => {
-        target.scrollIntoView({ behavior: 'instant', block: 'center' });
+        target.scrollIntoView({ behavior: 'instant', block: 'start' });
       }, 150);
     }
   }

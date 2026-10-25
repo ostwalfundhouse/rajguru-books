@@ -1395,9 +1395,17 @@ em {
 }
 .paper-heading h2 em { color: var(--red); }
 
+/* Hide mobile-specific navigation strips & hints on desktop */
+.ruling-mobile-nav,
+.industry-mobile-nav,
+.ruling-swipe-hint,
+.industry-swipe-hint {
+  display: none !important;
+}
+
 .paper-explorer {
   display: grid;
-  grid-template-columns: minmax(260px, .35fr) 1fr;
+  grid-template-columns: minmax(280px, .35fr) 1fr;
   gap: 50px;
   align-items: center;
 }
@@ -3599,6 +3607,301 @@ em {
     padding-top: 10px !important;
     gap: 6px !important;
     font-size: 0.75rem !important;
+  }
+
+  /* Section 09: Industries We Serve Mobile UX Overhaul */
+  .industries-section {
+    padding: 70px var(--pad);
+  }
+  .industries-head h2 {
+    margin-bottom: 24px;
+    font-size: clamp(1.85rem, 7.5vw, 2.5rem);
+  }
+  .industry-mobile-nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    margin-bottom: 12px !important;
+  }
+  .industry-mobile-nav button {
+    background: rgba(217, 37, 44, 0.18) !important;
+    border: 1px solid var(--red) !important;
+    color: #fff !important;
+    padding: 7px 14px !important;
+    border-radius: 20px !important;
+    font-size: 0.76rem !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: background .2s, transform .2s !important;
+  }
+  .industry-mobile-nav button:active {
+    background: var(--red) !important;
+    transform: scale(0.95) !important;
+  }
+  #industryMobileStep {
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+  }
+  .industry-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+  .industry-list {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    gap: 8px !important;
+    padding: 2px 2px 10px !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+  .industry-list::-webkit-scrollbar {
+    display: none !important;
+  }
+  .industry-list button {
+    flex: 0 0 auto !important;
+    padding: 8px 14px !important;
+    border-radius: 24px !important;
+    font-size: 0.8rem !important;
+    gap: 6px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    text-align: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+  .industry-list button span {
+    font-size: 0.65rem !important;
+    width: auto !important;
+    padding: 1px 5px !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    display: inline-block !important;
+    margin-right: 2px !important;
+  }
+  .industry-list button.is-active {
+    background: rgba(217, 37, 44, 0.22) !important;
+    border-color: var(--red) !important;
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(217, 37, 44, 0.35) !important;
+    padding-left: 14px !important;
+  }
+  .industry-list button.is-active span {
+    background: var(--red) !important;
+    color: #fff !important;
+  }
+  .industry-display {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+  .industry-display-image {
+    aspect-ratio: 16 / 10 !important;
+    height: auto !important;
+    max-height: 220px !important;
+    min-height: 180px !important;
+    border-radius: 6px 6px 0 0 !important;
+    position: relative !important;
+    touch-action: pan-y !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .industry-swipe-hint {
+    display: block !important;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(8, 11, 14, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 0.65rem;
+    color: #cbd5e1;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    z-index: 5;
+    white-space: nowrap;
+  }
+  .industry-display-meta {
+    padding: 16px !important;
+  }
+  .industry-display-meta h3 {
+    font-size: 1.3rem !important;
+    margin: 4px 0 8px !important;
+  }
+  .industry-display-meta p {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Section 12: Contact & Enquiry Section Mobile Overhaul */
+  .contact {
+    padding: 70px var(--pad) !important;
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  .contact-info,
+  .contact-form-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  .contact-info h2 {
+    font-size: clamp(1.85rem, 7.5vw, 2.5rem) !important;
+    margin-bottom: 24px !important;
+    line-height: 1.08 !important;
+  }
+  .official-business-card {
+    padding: 18px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 24px !important;
+    overflow: hidden !important;
+    border-radius: 8px !important;
+  }
+  .card-logo-head {
+    gap: 12px !important;
+    padding-bottom: 14px !important;
+    margin-bottom: 14px !important;
+  }
+  .card-logo-head img {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  .card-logo-head strong {
+    font-size: 0.95rem !important;
+    line-height: 1.2 !important;
+  }
+  .official-business-card .address {
+    margin-bottom: 14px !important;
+  }
+  .official-business-card .address p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  .tax-info {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .tax-info strong {
+    font-size: 0.72rem !important;
+  }
+  .gstin-badge {
+    font-size: 0.75rem !important;
+    padding: 4px 8px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .contact-placeholders {
+    gap: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .contact-placeholders div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    padding-bottom: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .contact-placeholders dt {
+    font-size: 0.72rem !important;
+    color: var(--steel) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+  }
+  .contact-placeholders dd {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .contact-placeholders dd a {
+    font-size: 0.9rem !important;
+    word-break: break-word !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+  }
+  .enquiry-form {
+    padding: 20px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    gap: 14px !important;
+    border-radius: 8px !important;
+  }
+  .form-head {
+    padding-bottom: 12px !important;
+    margin-bottom: 4px !important;
+  }
+  .form-head span {
+    font-size: 1.05rem !important;
+  }
+  .form-row {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+  .enquiry-form label {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 6px !important;
+  }
+  .enquiry-form label span {
+    font-size: 0.72rem !important;
+  }
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 0.9rem !important;
+    padding: 11px 13px !important;
+    border-radius: 6px !important;
+  }
+  .form-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+    margin-top: 6px !important;
+    gap: 10px !important;
+  }
+  .form-buttons button {
+    width: 100% !important;
+    padding: 13px 20px !important;
+    font-size: 0.8rem !important;
   }
 }
 

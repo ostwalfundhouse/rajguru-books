@@ -632,14 +632,14 @@
         <h2>The right notebook begins<br>with the right <em>ruling.</em></h2>
       </div>
 
-      <div class="paper-explorer">
-        <!-- Mobile Fast Navigation Controls (Above Stage) -->
-        <div class="ruling-mobile-nav" aria-label="Browse notebook rulings">
-          <button type="button" id="rulingMobilePrev" aria-label="Previous ruling format">← Prev</button>
-          <span id="rulingMobileStep" aria-live="polite">1 of 5 · Single Line</span>
-          <button type="button" id="rulingMobileNext" aria-label="Next ruling format">Next →</button>
-        </div>
+      <!-- Mobile Fast Navigation Controls (Above Stage) -->
+      <div class="ruling-mobile-nav" id="rulingMobileNav" aria-label="Browse notebook rulings">
+        <button type="button" id="rulingMobilePrev" aria-label="Previous ruling format">← Prev</button>
+        <span id="rulingMobileStep" aria-live="polite">1 of 5 · Single Line</span>
+        <button type="button" id="rulingMobileNext" aria-label="Next ruling format">Next →</button>
+      </div>
 
+      <div class="paper-explorer">
         <div class="paper-tabs" id="paperTabsTrack" role="tablist" aria-label="Notebook Ruling Categories">
           <button role="tab" aria-selected="true" data-ruling="single">Single Line <span>01</span></button>
           <button role="tab" aria-selected="false" data-ruling="fourline">4-Line (Red &amp; Blue) <span>02</span></button>
@@ -881,8 +881,15 @@
         <h2>Serving the ecosystem of<br><em>learning &amp; business.</em></h2>
       </div>
 
+      <!-- Mobile Fast Navigation Controls (Above Stage) -->
+      <div class="industry-mobile-nav" id="industryMobileNav" aria-label="Browse industries we serve">
+        <button type="button" id="industryMobilePrev" aria-label="Previous industry sector">← Prev</button>
+        <span id="industryMobileStep" aria-live="polite">1 of 7 · Schools &amp; Colleges</span>
+        <button type="button" id="industryMobileNext" aria-label="Next industry sector">Next →</button>
+      </div>
+
       <div class="industry-layout">
-        <div class="industry-list" role="list">
+        <div class="industry-list" id="industryListTrack" role="list">
           <button class="is-active" data-industry="Schools &amp; Colleges" data-detail="Custom institutional notebooks, practical journals, graph books, and exam papers built for academic rigor." data-img="assets/school-notebooks.jpg">
             <span>01</span>Schools &amp; Junior Colleges
           </button>
@@ -907,7 +914,9 @@
         </div>
 
         <div class="industry-display">
-          <div class="industry-display-image" id="industryDisplayImage" role="img" aria-label="Schools and colleges environment" style="background-image: url('assets/school-notebooks.jpg');"></div>
+          <div class="industry-display-image" id="industryDisplayImage" role="img" aria-label="Schools and colleges environment" style="background-image: url('assets/school-notebooks.jpg');">
+            <div class="industry-swipe-hint"><span>⇄ Swipe to change sector</span></div>
+          </div>
           <div class="industry-display-meta">
             <span>Selected Sector</span>
             <h3 id="industryTitle">Schools &amp; Junior Colleges</h3>

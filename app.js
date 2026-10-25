@@ -350,13 +350,30 @@
   const industryDetail = document.getElementById('industryDetail');
   const industryDisplay = document.querySelector('.industry-display');
   const industryDisplayImage = document.getElementById('industryDisplayImage');
+  const industryMobileStep = document.getElementById('industryMobileStep');
+  const industryMobilePrev = document.getElementById('industryMobilePrev');
+  const industryMobileNext = document.getElementById('industryMobileNext');
+  const industryListTrack = document.getElementById('industryListTrack');
+  const industryBtns = Array.from(document.querySelectorAll('[data-industry]'));
+  let currentIndustryIndex = 0;
 
-  document.querySelectorAll('[data-industry]').forEach(btn => {
-    const pickIndustry = () => {
-      document.querySelectorAll('[data-industry]').forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      if (!industryDisplay) return;
+  function selectIndustry(index, smoothScrollTab = true) {
+    if (index < 0 || index >= industryBtns.length) return;
+    currentIndustryIndex = index;
+    const btn = industryBtns[index];
 
+    industryBtns.forEach(b => b.classList.remove('is-active'));
+    btn.classList.add('is-active');
+
+    if (smoothScrollTab && industryListTrack) {
+      btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+
+    if (industryMobileStep) {
+      industryMobileStep.textContent = `${index + 1} of ${industryBtns.length} · ${btn.dataset.industry}`;
+    }
+
+    if (industryDisplay) {
       industryDisplay.classList.add('is-changing');
       setTimeout(() => {
         if (industryTitle) industryTitle.textContent = btn.dataset.industry;
@@ -367,9 +384,52 @@
         }
         industryDisplay.classList.remove('is-changing');
       }, 180);
-    };
-    btn.addEventListener('click', pickIndustry);
+    }
+  }
+
+  industryBtns.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+      selectIndustry(idx, true);
+    });
   });
+
+  // Mobile Industry Fast Navigation Buttons
+  industryMobilePrev?.addEventListener('click', () => {
+    const nextIdx = (currentIndustryIndex - 1 + industryBtns.length) % industryBtns.length;
+    selectIndustry(nextIdx, true);
+  });
+  industryMobileNext?.addEventListener('click', () => {
+    const nextIdx = (currentIndustryIndex + 1) % industryBtns.length;
+    selectIndustry(nextIdx, true);
+  });
+
+  // Touch Swipe for Industry Display
+  const industryTouchArea = industryDisplayImage || industryDisplay;
+  if (industryTouchArea) {
+    let indTouchStartX = 0;
+    let indTouchStartY = 0;
+
+    industryTouchArea.addEventListener('touchstart', (e) => {
+      indTouchStartX = e.touches[0].clientX;
+      indTouchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    industryTouchArea.addEventListener('touchend', (e) => {
+      const diffX = e.changedTouches[0].clientX - indTouchStartX;
+      const diffY = e.changedTouches[0].clientY - indTouchStartY;
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          // Swipe left -> next industry
+          const nextIdx = (currentIndustryIndex + 1) % industryBtns.length;
+          selectIndustry(nextIdx, true);
+        } else {
+          // Swipe right -> prev industry
+          const nextIdx = (currentIndustryIndex - 1 + industryBtns.length) % industryBtns.length;
+          selectIndustry(nextIdx, true);
+        }
+      }
+    }, { passive: true });
+  }
 
   // 8. Factory Video Modal
   const videoModal = document.getElementById('videoModal');

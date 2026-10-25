@@ -95,6 +95,8 @@
       const progressed = Math.max(0, Math.min(1, -rect.top / scrollable));
       chainTrack.style.transform = `translate3d(${-progressed * 400}vw, 0, 0)`;
       chainProgress.style.width = `${progressed * 100}%`;
+    } else if (chainTrack) {
+      chainTrack.style.transform = '';
     }
   }
   window.addEventListener('scroll', updateScroll, { passive: true });
@@ -268,14 +270,14 @@
     }
     if (modalVideoPlayer) {
       modalVideoPlayer.style.display = 'block';
+      if (modalVideoFrame) modalVideoFrame.style.display = 'none';
       modalVideoPlayer.currentTime = 0;
+      modalVideoPlayer.muted = false;
+      modalVideoPlayer.volume = 1.0;
       modalVideoPlayer.play().catch(err => {
-        console.warn('Direct video autoplay was prevented or unsupported:', err);
-        if (modalVideoFrame) {
-          modalVideoPlayer.style.display = 'none';
-          modalVideoFrame.style.display = 'block';
-          modalVideoFrame.src = driveEmbedUrl;
-        }
+        console.warn('Unmuted autoplay prevented by browser policy; starting muted with unmute enabled:', err);
+        modalVideoPlayer.muted = true;
+        modalVideoPlayer.play().catch(() => {});
       });
     } else if (modalVideoFrame) {
       modalVideoFrame.style.display = 'block';

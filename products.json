@@ -1,0 +1,1562 @@
+[
+  {
+    "category": "School Notebooks",
+    "series": "BIG BOSS",
+    "pages": "48",
+    "code": "NB.01",
+    "per_pkt": "20",
+    "bundle": "800",
+    "mrp": "8",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "BIG BOSS",
+    "pages": "120",
+    "code": "NB.01A",
+    "per_pkt": "10",
+    "bundle": "480",
+    "mrp": "15",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "HONOUR OF INDIA",
+    "pages": "136",
+    "code": "NB.02",
+    "per_pkt": "10",
+    "bundle": "400",
+    "mrp": "18",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "SUPER DELUXE",
+    "pages": "128",
+    "code": "NB.03",
+    "per_pkt": "10",
+    "bundle": "400",
+    "mrp": "25",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "EXCEL BOND",
+    "pages": "72",
+    "code": "NB.04",
+    "per_pkt": "10",
+    "bundle": "480",
+    "mrp": "20",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "EXCEL BOND",
+    "pages": "140",
+    "code": "NB.04A",
+    "per_pkt": "10",
+    "bundle": "320",
+    "mrp": "30",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "ALTO JUMBO BROWN",
+    "pages": "72",
+    "code": "NB.05",
+    "per_pkt": "10",
+    "bundle": "480",
+    "mrp": "20",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "ALTO JUMBO BROWN",
+    "pages": "140",
+    "code": "NB.05A",
+    "per_pkt": "10",
+    "bundle": "320",
+    "mrp": "30",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "HANDSOME",
+    "pages": "88",
+    "code": "NB.06",
+    "per_pkt": "15",
+    "bundle": "480",
+    "mrp": "22",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "School Notebooks",
+    "series": "HANDSOME",
+    "pages": "176",
+    "code": "NB.06A",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "36",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "RITZ",
+    "pages": "112",
+    "code": "KS.01",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "28",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "AMAR",
+    "pages": "72",
+    "code": "KS.02",
+    "per_pkt": "15",
+    "bundle": "300",
+    "mrp": "20",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "AMAR",
+    "pages": "132",
+    "code": "KS.02A",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "30",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "HI-SPEED",
+    "pages": "120",
+    "code": "KS.03",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "32",
+    "ruling": "Single line"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "KHUSHI SOFT",
+    "pages": "72",
+    "code": "KS.04",
+    "per_pkt": "20",
+    "bundle": "400",
+    "mrp": "20",
+    "ruling": "SINGLE LINE"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "KHUSHI SOFT",
+    "pages": "144",
+    "code": "KS.04A",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "35",
+    "ruling": "SINGLE LINE"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "SAFARI",
+    "pages": "72",
+    "code": "KS.05",
+    "per_pkt": "15",
+    "bundle": "300",
+    "mrp": "30",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "SAFARI",
+    "pages": "132",
+    "code": "KS.05A",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "40",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "KANSAGAR",
+    "pages": "132",
+    "code": "KS.06",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "40",
+    "ruling": "Single line"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "PUNEET",
+    "pages": "132",
+    "code": "KS.07",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "40",
+    "ruling": "Single line"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "CRICKETER",
+    "pages": "132",
+    "code": "KS.08",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "40",
+    "ruling": "Single line"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "BROWN",
+    "pages": "132",
+    "code": "KS.09",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "40",
+    "ruling": "Single line"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "SOFTY",
+    "pages": "72",
+    "code": "KS.10",
+    "per_pkt": "20",
+    "bundle": "400",
+    "mrp": "30",
+    "ruling": "Single line,UN-Rulled"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "SOFTY",
+    "pages": "152",
+    "code": "KS.10A",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "45",
+    "ruling": "Single line,UN-Rulled"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "HANDSOME",
+    "pages": "80",
+    "code": "KS.11",
+    "per_pkt": "15",
+    "bundle": "300",
+    "mrp": "35",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "HANDSOME",
+    "pages": "152",
+    "code": "KS.11A",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "55",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "HANDSOME",
+    "pages": "240",
+    "code": "KS.11B",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "75",
+    "ruling": "SINGLE LINE ,2LINE, 3LINE, 4LINE, SQURELINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "PREMIUM",
+    "pages": "72",
+    "code": "KS.12",
+    "per_pkt": "20",
+    "bundle": "400",
+    "mrp": "20",
+    "ruling": "SINGLE LINE"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "PREMIUM",
+    "pages": "160",
+    "code": "KS.12A",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "40",
+    "ruling": "SINGLE LINE"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "SONATA",
+    "pages": "168",
+    "code": "KS.13",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "55",
+    "ruling": "Single line"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "I-SMART",
+    "pages": "92",
+    "code": "KS.14",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "35",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "King Size Notebooks",
+    "series": "I-SMART",
+    "pages": "192",
+    "code": "KS.14A",
+    "per_pkt": "8",
+    "bundle": "160",
+    "mrp": "60",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK GOLD",
+    "pages": "64",
+    "code": "LBS.01",
+    "per_pkt": "20",
+    "bundle": "400",
+    "mrp": "35",
+    "ruling": "Single line, UN-Rulled"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK SOCH (SOFT)",
+    "pages": "72",
+    "code": "LBS.02",
+    "per_pkt": "12",
+    "bundle": "240",
+    "mrp": "35",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK SOCH (SOFT)",
+    "pages": "152",
+    "code": "LBS.02A",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "60",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK SOCH (SOFT)",
+    "pages": "240",
+    "code": "LBS.02B",
+    "per_pkt": "5",
+    "bundle": "80",
+    "mrp": "90",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK SPARKLE (HARD)",
+    "pages": "140",
+    "code": "LBH.01",
+    "per_pkt": "10",
+    "bundle": "160",
+    "mrp": "55",
+    "ruling": "Single line, UN-Rulled"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK JUMBO (HARD)",
+    "pages": "72",
+    "code": "LBH.02",
+    "per_pkt": "12",
+    "bundle": "240",
+    "mrp": "40",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK JUMBO (HARD)",
+    "pages": "140",
+    "code": "LBH.02A",
+    "per_pkt": "10",
+    "bundle": "160",
+    "mrp": "60",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK JUMBO (HARD)",
+    "pages": "240",
+    "code": "LBH.02B",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "90",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK GOLD",
+    "pages": "88",
+    "code": "LBH.03",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "45",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK GOLD",
+    "pages": "168",
+    "code": "LBH.03A",
+    "per_pkt": "8",
+    "bundle": "160",
+    "mrp": "70",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "LONG BOOK CASE BINDING",
+    "pages": "320",
+    "code": "LBH.02D",
+    "per_pkt": "2",
+    "bundle": "30",
+    "mrp": "150",
+    "ruling": "Single line, UN-Rulled"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE PLATINUM (SOFT)",
+    "pages": "72",
+    "code": "A4.01",
+    "per_pkt": "12",
+    "bundle": "120",
+    "mrp": "40",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE PLATINUM (SOFT)",
+    "pages": "140",
+    "code": "A4.01A",
+    "per_pkt": "6",
+    "bundle": "96",
+    "mrp": "60",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE PLATINUM (SOFT)",
+    "pages": "176",
+    "code": "A4.01B",
+    "per_pkt": "5",
+    "bundle": "80",
+    "mrp": "70",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE PLATINUM (SOFT)",
+    "pages": "240",
+    "code": "A4.01C",
+    "per_pkt": "5",
+    "bundle": "60",
+    "mrp": "100",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE WIN (HARD)",
+    "pages": "140",
+    "code": "A4H.01",
+    "per_pkt": "6",
+    "bundle": "160",
+    "mrp": "50",
+    "ruling": "Single line, UN-Rulled"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE ROYAL (HARD)",
+    "pages": "140",
+    "code": "A4H.02",
+    "per_pkt": "6",
+    "bundle": "96",
+    "mrp": "60",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE ROYAL (HARD)",
+    "pages": "240",
+    "code": "A4H.02A",
+    "per_pkt": "5",
+    "bundle": "60",
+    "mrp": "100",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Long Books & Journals",
+    "series": "A4 KINGSIZE ROYAL (HARD)",
+    "pages": "320",
+    "code": "A4H.02C",
+    "per_pkt": "2",
+    "bundle": "30",
+    "mrp": "150",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "BULLET 2 IN 1",
+    "pages": "40",
+    "code": "RB.01",
+    "per_pkt": "25",
+    "bundle": "600",
+    "mrp": "15",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "BULLET 2 IN 1",
+    "pages": "100",
+    "code": "RB.01A",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "25",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "BULLET 2 IN 1",
+    "pages": "144",
+    "code": "RB.01B",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "30",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "BULLET 3 IN 1",
+    "pages": "168",
+    "code": "RB.01C",
+    "per_pkt": "10",
+    "bundle": "160",
+    "mrp": "40",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "BULLET  4 IN 1",
+    "pages": "216",
+    "code": "RB.01D",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "50",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "A4 2 IN 1",
+    "pages": "100",
+    "code": "RB.02",
+    "per_pkt": "10",
+    "bundle": "240",
+    "mrp": "25",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "A4 3 IN 1",
+    "pages": "168",
+    "code": "RB.02A",
+    "per_pkt": "10",
+    "bundle": "160",
+    "mrp": "40",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Rough Books (Multi-Subject)",
+    "series": "A4 5 IN 1",
+    "pages": "168",
+    "code": "RB.02B",
+    "per_pkt": "5",
+    "bundle": "80",
+    "mrp": "75",
+    "ruling": "SINGLE LINE, UN-RULLED"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.0 & 00 JANTA",
+    "pages": "",
+    "code": "DB.01",
+    "per_pkt": "12",
+    "bundle": "240",
+    "mrp": "35",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.0 & 00 JANTA",
+    "pages": "",
+    "code": "DB.01A",
+    "per_pkt": "12",
+    "bundle": "240",
+    "mrp": "50",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.0 & 00 SPL",
+    "pages": "",
+    "code": "DB.02",
+    "per_pkt": "12",
+    "bundle": "144",
+    "mrp": "45",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.0 & 00 SPL",
+    "pages": "",
+    "code": "DB.02A",
+    "per_pkt": "12",
+    "bundle": "108",
+    "mrp": "60",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.01,02,04 SPL",
+    "pages": "",
+    "code": "DB.03",
+    "per_pkt": "10",
+    "bundle": "",
+    "mrp": "100",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.01,02,04 SPL",
+    "pages": "",
+    "code": "DB.03A",
+    "per_pkt": "3",
+    "bundle": "",
+    "mrp": "140",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "DUPLICATE BOOK NO.01,02,04 SPL",
+    "pages": "",
+    "code": "DB.03B",
+    "per_pkt": "3",
+    "bundle": "",
+    "mrp": "200",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "TRIPLICATE BOOK NO.0 & NO.00",
+    "pages": "",
+    "code": "TB.01",
+    "per_pkt": "6",
+    "bundle": "144",
+    "mrp": "90",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Bill & Cash Receipt Books",
+    "series": "TRIPLICATE BOOK NO.0 & NO.00",
+    "pages": "",
+    "code": "TB.01A",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "120",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CASE-BINDING)",
+    "pages": "80",
+    "code": "RG.01",
+    "per_pkt": "6",
+    "bundle": "90",
+    "mrp": "100",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CASE-BINDING)",
+    "pages": "172",
+    "code": "RG.01A",
+    "per_pkt": "3",
+    "bundle": "54",
+    "mrp": "150",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CASE-BINDING)",
+    "pages": "264",
+    "code": "RG.01B",
+    "per_pkt": "3",
+    "bundle": "36",
+    "mrp": "230",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CASE-BINDING)",
+    "pages": "352",
+    "code": "RG.01C",
+    "per_pkt": "2",
+    "bundle": "30",
+    "mrp": "320",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CASE-BINDING)",
+    "pages": "80",
+    "code": "RG.02",
+    "per_pkt": "6",
+    "bundle": "90",
+    "mrp": "120",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CASE-BINDING)",
+    "pages": "172",
+    "code": "RG.02A",
+    "per_pkt": "3",
+    "bundle": "54",
+    "mrp": "175",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CASE-BINDING)",
+    "pages": "264",
+    "code": "RG.02B",
+    "per_pkt": "3",
+    "bundle": "36",
+    "mrp": "260",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CASE-BINDING)",
+    "pages": "352",
+    "code": "RG.02C",
+    "per_pkt": "2",
+    "bundle": "30",
+    "mrp": "360",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CALICO)",
+    "pages": "288",
+    "code": "RG\u00a9.01",
+    "per_pkt": "3",
+    "bundle": "60",
+    "mrp": "240",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CALICO)",
+    "pages": "384",
+    "code": "RG\u00a9.01A",
+    "per_pkt": "2",
+    "bundle": "48",
+    "mrp": "320",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "C/W REGISTER (CALICO)",
+    "pages": "480",
+    "code": "RG\u00a9.01B",
+    "per_pkt": "2",
+    "bundle": "40",
+    "mrp": "400",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CALICO)",
+    "pages": "288",
+    "code": "RG\u00a9.02",
+    "per_pkt": "3",
+    "bundle": "48",
+    "mrp": "250",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CALICO)",
+    "pages": "384",
+    "code": "RG\u00a9.02A",
+    "per_pkt": "2",
+    "bundle": "40",
+    "mrp": "340",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Register Books (Case & Calico)",
+    "series": "A/L REGISTER (CALICO)",
+    "pages": "480",
+    "code": "RG\u00a9.02B",
+    "per_pkt": "2",
+    "bundle": "32",
+    "mrp": "450",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Graph & Drawing Books",
+    "series": "A/4 GRAPH SUPER",
+    "pages": "28",
+    "code": "GB.01",
+    "per_pkt": "30",
+    "bundle": "600",
+    "mrp": "30",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Graph & Drawing Books",
+    "series": "A/4 GRAPH SPL",
+    "pages": "32",
+    "code": "GB.02",
+    "per_pkt": "30",
+    "bundle": "600",
+    "mrp": "30",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Graph & Drawing Books",
+    "series": "A/4 GRAPH SPL",
+    "pages": "64",
+    "code": "GB.02A",
+    "per_pkt": "15",
+    "bundle": "300",
+    "mrp": "40",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Graph & Drawing Books",
+    "series": "DRAWING BOOK DELUXE",
+    "pages": "32",
+    "code": "DR.01",
+    "per_pkt": "30",
+    "bundle": "600",
+    "mrp": "20",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Graph & Drawing Books",
+    "series": "DRAWING BOOK PREMIUM",
+    "pages": "32",
+    "code": "DR.02",
+    "per_pkt": "12",
+    "bundle": "192",
+    "mrp": "45",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Graph & Drawing Books",
+    "series": "A/4 GRAPH SHEET",
+    "pages": "480",
+    "code": "GPS.01",
+    "per_pkt": "6",
+    "bundle": "24",
+    "mrp": "400",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "6x4 BATAKA",
+    "pages": "80",
+    "code": "BK.01",
+    "per_pkt": "20",
+    "bundle": "640",
+    "mrp": "16",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "6x4 BATAKA",
+    "pages": "160",
+    "code": "BK.01A",
+    "per_pkt": "10",
+    "bundle": "480",
+    "mrp": "24",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "BATAKA NO.1&NO.2",
+    "pages": "40",
+    "code": "BK.02",
+    "per_pkt": "2400",
+    "bundle": "",
+    "mrp": "9",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "BATAKA NO.1&NO.2",
+    "pages": "60",
+    "code": "BK.02A",
+    "per_pkt": "1920",
+    "bundle": "",
+    "mrp": "12",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "SLIP PAD NO.1&NO.2",
+    "pages": "40",
+    "code": "SP.01",
+    "per_pkt": "10",
+    "bundle": "480",
+    "mrp": "22",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "SLIP PAD NO.1&NO.2",
+    "pages": "80",
+    "code": "SP.01A",
+    "per_pkt": "5",
+    "bundle": "240",
+    "mrp": "30",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CONFERENCE PAD",
+    "pages": "10",
+    "code": "CP.01",
+    "per_pkt": "50",
+    "bundle": "2000",
+    "mrp": "8",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CONFERENCE PAD",
+    "pages": "20",
+    "code": "CP.01A",
+    "per_pkt": "25",
+    "bundle": "1200",
+    "mrp": "12",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "GST REGISTER",
+    "pages": "96",
+    "code": "RGG.01",
+    "per_pkt": "6",
+    "bundle": "",
+    "mrp": "220",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "GST REGISTER",
+    "pages": "192",
+    "code": "RGG.01A",
+    "per_pkt": "4",
+    "bundle": "",
+    "mrp": "400",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CASH BOOK",
+    "pages": "96",
+    "code": "CS.01",
+    "per_pkt": "6",
+    "bundle": "",
+    "mrp": "200",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CASH BOOK",
+    "pages": "192",
+    "code": "CS.01A",
+    "per_pkt": "4",
+    "bundle": "",
+    "mrp": "350",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CASH BOOK",
+    "pages": "288",
+    "code": "CS.01B",
+    "per_pkt": "3",
+    "bundle": "",
+    "mrp": "460",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CASH BOOK",
+    "pages": "384",
+    "code": "CS.01C",
+    "per_pkt": "2",
+    "bundle": "",
+    "mrp": "580",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "CASH BOOK",
+    "pages": "480",
+    "code": "CS.01D",
+    "per_pkt": "2",
+    "bundle": "",
+    "mrp": "700",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LEDGER BOOK",
+    "pages": "96",
+    "code": "LD.01",
+    "per_pkt": "6",
+    "bundle": "",
+    "mrp": "220",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LEDGER BOOK",
+    "pages": "192",
+    "code": "LD.01A",
+    "per_pkt": "4",
+    "bundle": "",
+    "mrp": "360",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LEDGER BOOK",
+    "pages": "288",
+    "code": "LD.01B",
+    "per_pkt": "3",
+    "bundle": "",
+    "mrp": "470",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LEDGER BOOK",
+    "pages": "384",
+    "code": "LD.01C",
+    "per_pkt": "2",
+    "bundle": "",
+    "mrp": "590",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LEDGER BOOK",
+    "pages": "480",
+    "code": "LD.01D",
+    "per_pkt": "2",
+    "bundle": "",
+    "mrp": "720",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "ATTENDANCE BOOK",
+    "pages": "32",
+    "code": "AD.01",
+    "per_pkt": "25",
+    "bundle": "600",
+    "mrp": "40",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "ATTENDANCE BOOK",
+    "pages": "72",
+    "code": "AD.01A",
+    "per_pkt": "15",
+    "bundle": "300",
+    "mrp": "120",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "ATTENDANCE BOOK",
+    "pages": "144",
+    "code": "AD.01B",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "200",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "MASTER BOOK",
+    "pages": "72",
+    "code": "MS.01",
+    "per_pkt": "6",
+    "bundle": "",
+    "mrp": "180",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "MASTER BOOK",
+    "pages": "144",
+    "code": "MS.01A",
+    "per_pkt": "4",
+    "bundle": "",
+    "mrp": "380",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LAXMI BOOK",
+    "pages": "80",
+    "code": "LS.01",
+    "per_pkt": "15",
+    "bundle": "120",
+    "mrp": "60",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LAXMI BOOK",
+    "pages": "192",
+    "code": "LS.01A",
+    "per_pkt": "10",
+    "bundle": "90",
+    "mrp": "100",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "LAXMI BOOK",
+    "pages": "288",
+    "code": "LS.01B",
+    "per_pkt": "6",
+    "bundle": "72",
+    "mrp": "140",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Commercial & Accounts Registers",
+    "series": "STENO BOOK",
+    "pages": "",
+    "code": "STN.01",
+    "per_pkt": "10",
+    "bundle": "400",
+    "mrp": "25",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Practical Journals & Sheets",
+    "series": "KING SIZE PRATICAL",
+    "pages": "80",
+    "code": "PL.01",
+    "per_pkt": "15",
+    "bundle": "300",
+    "mrp": "45",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Practical Journals & Sheets",
+    "series": "KING SIZE PRATICAL",
+    "pages": "172",
+    "code": "PL.01A",
+    "per_pkt": "10",
+    "bundle": "200",
+    "mrp": "65",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Practical Journals & Sheets",
+    "series": "A/4 PRATICAL",
+    "pages": "72",
+    "code": "PL.01B",
+    "per_pkt": "6",
+    "bundle": "120",
+    "mrp": "80",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Practical Journals & Sheets",
+    "series": "A/4 PRATICAL",
+    "pages": "144",
+    "code": "PL.01C",
+    "per_pkt": "4",
+    "bundle": "80",
+    "mrp": "120",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Practical Journals & Sheets",
+    "series": "A/4 JOURNAL SHEET",
+    "pages": "480",
+    "code": "JS.01",
+    "per_pkt": "6",
+    "bundle": "24",
+    "mrp": "450",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Exam Answer Papers & Pads",
+    "series": "7NO SUPER AND SUPER DELUXE",
+    "pages": "240",
+    "code": "RP.01",
+    "per_pkt": "10",
+    "bundle": "40",
+    "mrp": "180",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Exam Answer Papers & Pads",
+    "series": "7NO EXAM GOLD &DELUXE",
+    "pages": "240",
+    "code": "RP.02",
+    "per_pkt": "8",
+    "bundle": "32",
+    "mrp": "230",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Exam Answer Papers & Pads",
+    "series": "7NO EXAM GOLD &DELUXE",
+    "pages": "240",
+    "code": "RP.02A",
+    "per_pkt": "8",
+    "bundle": "32",
+    "mrp": "230",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Exam Answer Papers & Pads",
+    "series": "7NO EXAM SUPER DELUXE",
+    "pages": "240",
+    "code": "RP.03",
+    "per_pkt": "10",
+    "bundle": "40",
+    "mrp": "230",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Exam Answer Papers & Pads",
+    "series": "8NO EXAM GOLD",
+    "pages": "240",
+    "code": "RP.02B",
+    "per_pkt": "8",
+    "bundle": "32",
+    "mrp": "300",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Exam Answer Papers & Pads",
+    "series": "ROUGH PAPER",
+    "pages": "400",
+    "code": "RP.04",
+    "per_pkt": "10",
+    "bundle": "40",
+    "mrp": "120",
+    "ruling": "Standard Ruled / Plain"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "111 FILE",
+    "pages": "-",
+    "code": "F-111",
+    "per_pkt": "-",
+    "bundle": "1008",
+    "mrp": "12",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "222 FILE",
+    "pages": "-",
+    "code": "F-222",
+    "per_pkt": "-",
+    "bundle": "600",
+    "mrp": "18",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "268 FILE",
+    "pages": "-",
+    "code": "F-268",
+    "per_pkt": "-",
+    "bundle": "360",
+    "mrp": "30",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "270 FILE",
+    "pages": "-",
+    "code": "F-270",
+    "per_pkt": "-",
+    "bundle": "360",
+    "mrp": "35",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "808 FILE",
+    "pages": "-",
+    "code": "F-808",
+    "per_pkt": "-",
+    "bundle": "360",
+    "mrp": "30",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "CC-300 FILE",
+    "pages": "-",
+    "code": "F-300",
+    "per_pkt": "-",
+    "bundle": "50pkt",
+    "mrp": "18",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "CC-600 FILE",
+    "pages": "-",
+    "code": "F-600",
+    "per_pkt": "-",
+    "bundle": "30pkt",
+    "mrp": "22",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "CC-700 FILE",
+    "pages": "-",
+    "code": "F-700",
+    "per_pkt": "-",
+    "bundle": "30pkt",
+    "mrp": "25",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "TAG-777",
+    "pages": "-",
+    "code": "FT-777",
+    "per_pkt": "-",
+    "bundle": "300",
+    "mrp": "30",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "Diamond cobra",
+    "pages": "-",
+    "code": "F-DC",
+    "per_pkt": "-",
+    "bundle": "240",
+    "mrp": "75",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "TAG-lamina",
+    "pages": "-",
+    "code": "F-T-L",
+    "per_pkt": "-",
+    "bundle": "300",
+    "mrp": "35",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "Ilet-file",
+    "pages": "-",
+    "code": "F-ILET",
+    "per_pkt": "-",
+    "bundle": "50pkt",
+    "mrp": "10",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "Superme Plasto",
+    "pages": "-",
+    "code": "F-SP",
+    "per_pkt": "-",
+    "bundle": "600",
+    "mrp": "22",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "2-FLAP GOT",
+    "pages": "-",
+    "code": "F-2F",
+    "per_pkt": "-",
+    "bundle": "200",
+    "mrp": "20",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "2 FLAP SPL",
+    "pages": "-",
+    "code": "F-2FS",
+    "per_pkt": "-",
+    "bundle": "200",
+    "mrp": "22",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "3003 Nano cobra",
+    "pages": "-",
+    "code": "F-3003",
+    "per_pkt": "-",
+    "bundle": "30pkt",
+    "mrp": "25",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "LASE File",
+    "pages": "-",
+    "code": "F-LF",
+    "per_pkt": "-",
+    "bundle": "150",
+    "mrp": "60",
+    "ruling": "Stationery Filing"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "1515",
+    "pages": "-",
+    "code": "1515",
+    "per_pkt": "-",
+    "bundle": "24",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "1845",
+    "pages": "-",
+    "code": "1845",
+    "per_pkt": "-",
+    "bundle": "24",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "1511",
+    "pages": "-",
+    "code": "1511",
+    "per_pkt": "-",
+    "bundle": "24",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "565",
+    "pages": "-",
+    "code": "565",
+    "per_pkt": "-",
+    "bundle": "15",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "510 R",
+    "pages": "-",
+    "code": "510 R",
+    "per_pkt": "-",
+    "bundle": "24",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "333-Titanic",
+    "pages": "-",
+    "code": "333-Titanic",
+    "per_pkt": "-",
+    "bundle": "35",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "965",
+    "pages": "-",
+    "code": "965",
+    "per_pkt": "-",
+    "bundle": "15",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "1025",
+    "pages": "-",
+    "code": "1025",
+    "per_pkt": "-",
+    "bundle": "15",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "RPM GOLD",
+    "pages": "-",
+    "code": "RPM",
+    "per_pkt": "-",
+    "bundle": "24",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "210 R",
+    "pages": "-",
+    "code": "210-R",
+    "per_pkt": "-",
+    "bundle": "20",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  },
+  {
+    "category": "Office Files & Folders",
+    "series": "Diamond",
+    "pages": "-",
+    "code": "D-F-L",
+    "per_pkt": "-",
+    "bundle": "24",
+    "mrp": "-",
+    "ruling": "Archival Storage"
+  }
+]

@@ -1,0 +1,17 @@
+# Node & environment
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Large raw video (exceeds GitHub 100MB limit)
+factory_tour_1080p.mp4
+
+# Temporary frame extraction folders
+extracted_frames/
+catalog_stills/
+video_stills/
+video_frames/
+
+# Temporary python scripts
+curate_product_images.py

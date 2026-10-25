@@ -170,8 +170,24 @@
 
     <!-- Section 01: Statement / Company Story -->
     <section class="statement" id="about">
-      <div class="section-index">01 / Our Story</div>
+      <!-- Left Column: Manufacturing Heritage & Craft Visual (Desktop) -->
+      <div class="statement-media reveal">
+        <div class="statement-media-card">
+          <img src="assets/binding-craft.jpg" alt="Notebook binding craftsmanship and precision paper manufacturing at Rajguru Hubballi plant" class="statement-img" loading="lazy">
+          <div class="statement-badge-overlay">
+            <span class="badge-num">25+</span>
+            <span class="badge-text">Years of Manufacturing<br>Integrity &amp; Scale</span>
+          </div>
+          <div class="statement-caption">
+            <strong>Rajguru Production Facility</strong>
+            <span>Budrasinghi Village · Hubballi, Karnataka · Estd. 2000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Company Story & Guiding Principle -->
       <div class="statement-copy reveal">
+        <div class="section-index">01 / Our Story &amp; Heritage</div>
         <h2><span>Since 2000.</span><br>A quiet, consistent presence in education and industry.</h2>
         
         <div class="statement-body">
@@ -205,8 +221,26 @@
       </div>
 
       <div class="video-container reveal">
-        <div class="video-embed-card">
-          <!-- Google Drive Video Stream Iframe -->
+        <div class="video-embed-card" id="factoryVideoCard">
+          <!-- Branded Video Poster Thumbnail -->
+          <img 
+            src="assets/factory-video-poster.jpg" 
+            alt="Rajguru Book Manufacturers Factory Floor &amp; Video Tour Thumbnail" 
+            class="video-thumbnail-img" 
+            id="videoThumbnailImg">
+
+          <!-- Glowing Center Play Trigger Button -->
+          <button class="video-play-center-btn" id="playThumbnailCenterBtn" aria-label="Play Factory Tour Video">
+            <span class="play-pulse"></span>
+            <span class="play-icon-triangle">▶</span>
+          </button>
+
+          <!-- Duration & Resolution Badge -->
+          <div class="video-badge-runtime">
+            <span class="live-dot"></span> 0:45 Full HD · Plant Footage
+          </div>
+
+          <!-- Video Stream Iframe (Background) -->
           <div class="video-frame-wrapper">
             <iframe 
               id="factoryVideoFrame"
@@ -346,23 +380,247 @@
       </div>
       <div class="marquee" aria-label="Specialized capabilities">
         <div class="marquee-track">
-          <div class="cap-item"><b>01</b><span>High-Speed<br>Web Ruling</span></div>
-          <div class="cap-item"><b>02</b><span>Durable Calico<br>Spine Binding</span></div>
-          <div class="cap-item"><b>03</b><span>Hard Case<br>Ledger Registers</span></div>
-          <div class="cap-item"><b>04</b><span>King Size &amp;<br>A4 Long Books</span></div>
-          <div class="cap-item"><b>05</b><span>Institutional Crest<br>&amp; Logo Foiling</span></div>
-          <div class="cap-item"><b>06</b><span>Multi-Subject<br>Rough Books</span></div>
-          <div class="cap-item"><b>07</b><span>GST, Cash &amp;<br>Account Books</span></div>
-          <div class="cap-item"><b>08</b><span>Practical Journals<br>&amp; Graph Sheets</span></div>
-          <div class="cap-item"><b>09</b><span>Office Lever<br>&amp; Box Files</span></div>
-          <div class="cap-item"><b>10</b><span>Verified Page Count<br>Quality Assurance</span></div>
-          <!-- Marquee duplicate for infinite scroll -->
-          <div class="cap-item" aria-hidden="true"><b>01</b><span>High-Speed<br>Web Ruling</span></div>
-          <div class="cap-item" aria-hidden="true"><b>02</b><span>Durable Calico<br>Spine Binding</span></div>
-          <div class="cap-item" aria-hidden="true"><b>03</b><span>Hard Case<br>Ledger Registers</span></div>
-          <div class="cap-item" aria-hidden="true"><b>04</b><span>King Size &amp;<br>A4 Long Books</span></div>
-          <div class="cap-item" aria-hidden="true"><b>05</b><span>Institutional Crest<br>&amp; Logo Foiling</span></div>
-          <div class="cap-item" aria-hidden="true"><b>06</b><span>Multi-Subject<br>Rough Books</span></div>
+          <!-- Item 01 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/ruling-press.jpg" alt="High-Speed Web Ruling" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">01</span>
+              <h4>High-Speed<br>Web Ruling</h4>
+              <p>Continuous rotary precision</p>
+            </div>
+          </div>
+
+          <!-- Item 02 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/binding-craft.jpg" alt="Durable Calico Spine Binding" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">02</span>
+              <h4>Durable Calico<br>Spine Binding</h4>
+              <p>Reinforced cloth bound tape</p>
+            </div>
+          </div>
+
+          <!-- Item 03 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/registers-ledgers.jpg" alt="Hard Case Ledger Registers" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">03</span>
+              <h4>Hard Case<br>Ledger Registers</h4>
+              <p>Heavy duty stiff board binding</p>
+            </div>
+          </div>
+
+          <!-- Item 04 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/notebooks-stack.jpg" alt="King Size & A4 Long Books" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">04</span>
+              <h4>King Size &amp;<br>A4 Long Books</h4>
+              <p>School &amp; college staples</p>
+            </div>
+          </div>
+
+          <!-- Item 05 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/institutional-books.jpg" alt="Institutional Crest & Logo Foiling" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">05</span>
+              <h4>Institutional Crest<br>&amp; Logo Foiling</h4>
+              <p>Custom school branding</p>
+            </div>
+          </div>
+
+          <!-- Item 06 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/products/roughbook-real.jpg" alt="Multi-Subject Rough Books" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">06</span>
+              <h4>Multi-Subject<br>Rough Books</h4>
+              <p>High-capacity daily practice</p>
+            </div>
+          </div>
+
+          <!-- Item 07 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/products/accounts-ledger-real.jpg" alt="GST, Cash & Account Books" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">07</span>
+              <h4>GST, Cash &amp;<br>Account Books</h4>
+              <p>Commercial compliance formats</p>
+            </div>
+          </div>
+
+          <!-- Item 08 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/products/practical-journal-real.jpg" alt="Practical Journals & Graph Sheets" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">08</span>
+              <h4>Practical Journals<br>&amp; Graph Sheets</h4>
+              <p>Science &amp; engineering grids</p>
+            </div>
+          </div>
+
+          <!-- Item 09 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/office-files.jpg" alt="Office Lever & Box Files" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">09</span>
+              <h4>Office Lever<br>&amp; Box Files</h4>
+              <p>Archival documentation storage</p>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="cap-item">
+            <div class="cap-media">
+              <img src="assets/products/rajguru-trimming-real.jpg" alt="Verified Page Count QA" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">10</span>
+              <h4>Verified Page Count<br>Quality Assurance</h4>
+              <p>Guaranteed honest sheet count</p>
+            </div>
+          </div>
+
+          <!-- Marquee duplicate set for infinite seamless scroll (aria-hidden) -->
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/ruling-press.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">01</span>
+              <h4>High-Speed<br>Web Ruling</h4>
+              <p>Continuous rotary precision</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/binding-craft.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">02</span>
+              <h4>Durable Calico<br>Spine Binding</h4>
+              <p>Reinforced cloth bound tape</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/registers-ledgers.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">03</span>
+              <h4>Hard Case<br>Ledger Registers</h4>
+              <p>Heavy duty stiff board binding</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/notebooks-stack.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">04</span>
+              <h4>King Size &amp;<br>A4 Long Books</h4>
+              <p>School &amp; college staples</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/institutional-books.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">05</span>
+              <h4>Institutional Crest<br>&amp; Logo Foiling</h4>
+              <p>Custom school branding</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/products/roughbook-real.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">06</span>
+              <h4>Multi-Subject<br>Rough Books</h4>
+              <p>High-capacity daily practice</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/products/accounts-ledger-real.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">07</span>
+              <h4>GST, Cash &amp;<br>Account Books</h4>
+              <p>Commercial compliance formats</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/products/practical-journal-real.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">08</span>
+              <h4>Practical Journals<br>&amp; Graph Sheets</h4>
+              <p>Science &amp; engineering grids</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/office-files.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">09</span>
+              <h4>Office Lever<br>&amp; Box Files</h4>
+              <p>Archival documentation storage</p>
+            </div>
+          </div>
+          <div class="cap-item" aria-hidden="true">
+            <div class="cap-media">
+              <img src="assets/products/rajguru-trimming-real.jpg" alt="" loading="lazy">
+              <div class="cap-overlay"></div>
+            </div>
+            <div class="cap-body">
+              <span class="cap-badge">10</span>
+              <h4>Verified Page Count<br>Quality Assurance</h4>
+              <p>Guaranteed honest sheet count</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -375,7 +633,14 @@
       </div>
 
       <div class="paper-explorer">
-        <div class="paper-tabs" role="tablist" aria-label="Notebook Ruling Categories">
+        <!-- Mobile Fast Navigation Controls (Above Stage) -->
+        <div class="ruling-mobile-nav" aria-label="Browse notebook rulings">
+          <button type="button" id="rulingMobilePrev" aria-label="Previous ruling format">← Prev</button>
+          <span id="rulingMobileStep" aria-live="polite">1 of 5 · Single Line</span>
+          <button type="button" id="rulingMobileNext" aria-label="Next ruling format">Next →</button>
+        </div>
+
+        <div class="paper-tabs" id="paperTabsTrack" role="tablist" aria-label="Notebook Ruling Categories">
           <button role="tab" aria-selected="true" data-ruling="single">Single Line <span>01</span></button>
           <button role="tab" aria-selected="false" data-ruling="fourline">4-Line (Red &amp; Blue) <span>02</span></button>
           <button role="tab" aria-selected="false" data-ruling="square">Square Grid (Math) <span>03</span></button>
@@ -389,6 +654,9 @@
               <div class="sheet-margin-red"></div>
               <div class="sheet-lines"></div>
               <div class="sheet-watermark">RAJGURU PREMIUM 70 GSM</div>
+            </div>
+            <div class="ruling-swipe-hint">
+              <span>⇄ Swipe sheet to change format</span>
             </div>
           </div>
 
@@ -859,7 +1127,7 @@
           controls 
           playsinline 
           preload="metadata"
-          poster="assets/products/rajguru-brand-wall-real.jpg"
+          poster="assets/factory-video-poster.jpg"
           style="width:100%;height:100%;object-fit:contain;background:#000;border-radius:4px;">
           <source src="factory_tour.mp4" type="video/mp4">
         </video>

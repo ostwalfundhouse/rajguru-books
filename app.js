@@ -211,30 +211,91 @@
   const rulingDesc = document.getElementById('rulingDescription');
   const rulingSpecs = document.getElementById('rulingSpecs');
   const paperStage = document.querySelector('.paper-stage');
+  const paperTabsTrack = document.getElementById('paperTabsTrack');
+  const rulingMobileStep = document.getElementById('rulingMobileStep');
+  const rulingCanvas = document.getElementById('rulingVisualCanvas');
+
+  const rulingKeys = ['single', 'fourline', 'square', 'unruled', 'ledger'];
+  let currentRulingIndex = 0;
+
+  function selectRuling(rKey, smoothScrollTab = true) {
+    const data = rulingData[rKey];
+    if (!data || !paperStage) return;
+
+    currentRulingIndex = rulingKeys.indexOf(rKey);
+    if (currentRulingIndex === -1) currentRulingIndex = 0;
+
+    const activeTab = document.querySelector(`[data-ruling="${rKey}"]`);
+    document.querySelectorAll('[data-ruling]').forEach(b => b.setAttribute('aria-selected', 'false'));
+    if (activeTab) {
+      activeTab.setAttribute('aria-selected', 'true');
+      if (smoothScrollTab && paperTabsTrack) {
+        activeTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }
+    }
+
+    if (rulingMobileStep) {
+      rulingMobileStep.textContent = `${data.number} of 5 · ${data.title}`;
+    }
+
+    paperStage.classList.add('is-changing');
+    setTimeout(() => {
+      if (rulingNumber) rulingNumber.textContent = data.number;
+      if (rulingTitle) rulingTitle.textContent = data.title;
+      if (rulingDesc) rulingDesc.textContent = data.desc;
+      if (rulingSpecs) {
+        rulingSpecs.innerHTML = data.specs.map(([k, v]) => `<span><b>${k}:</b> ${v}</span>`).join('');
+      }
+      if (sheetPreview) {
+        sheetPreview.className = `notebook-sheet-preview ${data.previewClass}`;
+      }
+      paperStage.classList.remove('is-changing');
+    }, 180);
+  }
 
   document.querySelectorAll('[data-ruling]').forEach(tab => {
     tab.addEventListener('click', () => {
-      document.querySelectorAll('[data-ruling]').forEach(b => b.setAttribute('aria-selected', 'false'));
-      tab.setAttribute('aria-selected', 'true');
-      const rKey = tab.dataset.ruling;
-      const data = rulingData[rKey];
-      if (!data || !paperStage) return;
-
-      paperStage.classList.add('is-changing');
-      setTimeout(() => {
-        if (rulingNumber) rulingNumber.textContent = data.number;
-        if (rulingTitle) rulingTitle.textContent = data.title;
-        if (rulingDesc) rulingDesc.textContent = data.desc;
-        if (rulingSpecs) {
-          rulingSpecs.innerHTML = data.specs.map(([k, v]) => `<span><b>${k}:</b> ${v}</span>`).join('');
-        }
-        if (sheetPreview) {
-          sheetPreview.className = `notebook-sheet-preview ${data.previewClass}`;
-        }
-        paperStage.classList.remove('is-changing');
-      }, 180);
+      selectRuling(tab.dataset.ruling);
     });
   });
+
+  // Mobile Ruling Navigation buttons
+  document.getElementById('rulingMobilePrev')?.addEventListener('click', () => {
+    const nextIdx = (currentRulingIndex - 1 + rulingKeys.length) % rulingKeys.length;
+    selectRuling(rulingKeys[nextIdx]);
+  });
+  document.getElementById('rulingMobileNext')?.addEventListener('click', () => {
+    const nextIdx = (currentRulingIndex + 1) % rulingKeys.length;
+    selectRuling(rulingKeys[nextIdx]);
+  });
+
+  // Touch swipe support on the ruling paper canvas & stage
+  const touchArea = rulingCanvas || paperStage;
+  if (touchArea) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    touchArea.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    touchArea.addEventListener('touchend', (e) => {
+      const diffX = e.changedTouches[0].clientX - touchStartX;
+      const diffY = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          // Swipe left -> next ruling
+          const nextIdx = (currentRulingIndex + 1) % rulingKeys.length;
+          selectRuling(rulingKeys[nextIdx]);
+        } else {
+          // Swipe right -> prev ruling
+          const nextIdx = (currentRulingIndex - 1 + rulingKeys.length) % rulingKeys.length;
+          selectRuling(rulingKeys[nextIdx]);
+        }
+      }
+    }, { passive: true });
+  }
 
   // 6. Quality Comparison Slider
   const compare = document.getElementById('compare');
@@ -411,6 +472,13 @@
 
   heroPlayVideoBtn?.addEventListener('click', openVideo);
   openVideoModalBtn?.addEventListener('click', openVideo);
+  document.getElementById('playThumbnailCenterBtn')?.addEventListener('click', openVideo);
+  document.getElementById('videoThumbnailImg')?.addEventListener('click', openVideo);
+  document.getElementById('factoryVideoCard')?.addEventListener('click', (e) => {
+    if (e.target.closest('#playThumbnailCenterBtn') || e.target.closest('#videoThumbnailImg') || e.target.closest('#openVideoModalBtn')) {
+      openVideo();
+    }
+  });
   closeVideoModalBtn?.addEventListener('click', closeVideo);
   videoBackdrop?.addEventListener('click', closeVideo);
   document.addEventListener('keydown', (e) => {

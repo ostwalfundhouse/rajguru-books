@@ -237,17 +237,51 @@
   });
 
   // 6. Quality Comparison Slider
+  const compare = document.getElementById('compare');
   const compareRange = document.getElementById('compareRange');
   const compareTop = document.getElementById('compareTop');
   const compareLine = document.getElementById('compareLine');
 
   if (compareRange && compareTop && compareLine) {
     const updateCompare = () => {
-      const val = `${compareRange.value}%`;
-      compareTop.style.width = val;
-      compareLine.style.left = val;
+      const val = Number(compareRange.value);
+      const pct = `${val}%`;
+      compareTop.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+      compareTop.style.webkitClipPath = `inset(0 ${100 - val}% 0 0)`;
+      compareLine.style.left = pct;
     };
     compareRange.addEventListener('input', updateCompare);
+    compareRange.addEventListener('change', updateCompare);
+    updateCompare();
+
+    if (compare) {
+      let isDragging = false;
+      const setSliderFromPointer = (e) => {
+        const rect = compare.getBoundingClientRect();
+        if (rect.width <= 0) return;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        if (typeof clientX !== 'number') return;
+        const x = clientX - rect.left;
+        const pct = Math.max(5, Math.min(95, Math.round((x / rect.width) * 100)));
+        compareRange.value = pct;
+        updateCompare();
+      };
+
+      compare.addEventListener('pointerdown', (e) => {
+        isDragging = true;
+        setSliderFromPointer(e);
+      });
+      window.addEventListener('pointermove', (e) => {
+        if (!isDragging) return;
+        setSliderFromPointer(e);
+      });
+      window.addEventListener('pointerup', () => {
+        isDragging = false;
+      });
+      window.addEventListener('pointercancel', () => {
+        isDragging = false;
+      });
+    }
   }
 
   // 7. Industry Switcher
@@ -742,5 +776,15 @@
   // 15. Dynamic Footer Year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // 16. Direct Section Deep Linking
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'instant', block: 'center' });
+      }, 150);
+    }
+  }
 
 })();

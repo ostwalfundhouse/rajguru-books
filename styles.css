@@ -1409,47 +1409,33 @@ em {
 .compare-base, .compare-top {
   position: absolute;
   inset: 0;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
 .compare-base img, .compare-top img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+
+.compare-base {
+  z-index: 1;
 }
 
 .compare-top {
-  width: 50%;
   z-index: 2;
-  border-right: 2px solid #fff;
-  background: #181d22;
-}
-
-.ordinary-overlay-sim {
-  position: absolute;
-  inset: 0;
-  background: rgba(22, 26, 30, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  color: #fff;
-}
-.sim-text-ghost {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 400px;
-}
-.sim-text-ghost p {
-  padding: 12px 18px;
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 3px solid #ff4757;
-  font-size: .95rem;
-  color: #e0e4e6;
-  border-radius: 0 4px 4px 0;
+  clip-path: inset(0 50% 0 0);
+  -webkit-clip-path: inset(0 50% 0 0);
+  width: 100%;
 }
 
 .compare-tag {
@@ -1459,19 +1445,23 @@ em {
   padding: 6px 14px;
   border-radius: 4px;
   font-size: .68rem;
-  letter-spacing: .14em;
+  letter-spacing: .12em;
   font-weight: 700;
   text-transform: uppercase;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 .left-tag {
   left: 20px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(18, 22, 26, 0.9);
   color: #ff6b6b;
   border: 1px solid rgba(255, 107, 107, 0.4);
 }
 .right-tag {
   right: 20px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(18, 22, 26, 0.9);
   color: #2ed573;
   border: 1px solid rgba(46, 213, 115, 0.4);
 }
@@ -3233,8 +3223,37 @@ em {
   .footer-bottom { flex-direction: column; gap: 14px; text-align: center; }
   .catalog-toolbar { flex-direction: column; align-items: stretch; }
   .catalog-filter-group { justify-content: space-between; }
-  .compare { aspect-ratio: 4 / 3; }
-  .ordinary-overlay-sim { padding: 20px; }
+  .coatings {
+    padding: 70px var(--pad);
+  }
+  .coatings-copy h2,
+  .catalog-head h2,
+  .about-head h2,
+  .factory-head h2 {
+    font-size: clamp(1.85rem, 7.5vw, 2.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .coatings-copy p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .compare {
+    aspect-ratio: 4 / 3;
+    margin: 30px auto 0;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .compare-tag {
+    bottom: 12px;
+    padding: 4px 8px;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+  }
+  .left-tag { left: 10px; }
+  .right-tag { right: 10px; }
 
   /* Mobile Catalog & Product Cards Enhancement */
   .category-spotlight-grid {

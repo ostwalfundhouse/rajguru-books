@@ -14,5 +14,8 @@
     "hubballi"
   ],
   "author": "Rajguru Book Manufacturers",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ws": "^8.22.0"
+  }
 }
